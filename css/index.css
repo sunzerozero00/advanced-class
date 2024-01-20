@@ -1,0 +1,67 @@
+@import url(reset.css) layer(reset);
+@import url(swiper.css) layer(swiper);
+@layer reset, banner, swiper, table.board, heading, gallery, button, space, align;
+
+@layer banner {
+  /* 배너코딩 */
+}
+@layer heading {
+  .heading {
+    &.large {
+    }
+    &.regualr {
+    }
+    &.small {
+    }
+  }
+}
+@layer gallery {
+  .gallery {
+    & ul {
+      margin: 20px 0;
+    }
+  }
+}
+@layer button {
+  .btn-more {
+  }
+  .btn-link {
+  }
+}
+
+@layer space {
+  .mt10 {
+    margin-top: 10px;
+  }
+}
+@layer align {
+  .txt-left {
+    text-align: left;
+  }
+  .txt-center {
+    text-align: center;
+  }
+}
+@layer table {
+  @layer board {
+    .table-type1 {
+      & td {
+        text-align: center;
+      }
+    }
+  }
+  @layer table {
+    /* 테이블 */
+  }
+}
+
+div {
+  width: calc(var(--w) * 0.1rem);
+}
+.movie-list:has(.--hide) + .btn-more {
+  display: block;
+}
+
+.btn-more {
+  display: none;
+}
