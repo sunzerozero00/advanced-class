@@ -15,5 +15,8 @@ git init
 Git 클론
 
 ```bash
-git clone https://github.com/rebehayan/advanced-class5.git
+git clone https://github.com/sunzerozero00/advanced-class.git
 ```
+
+## View
+index: https://sunzerozero00.github.io/advanced-class/filelist.html
